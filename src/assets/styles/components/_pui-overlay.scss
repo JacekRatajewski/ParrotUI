@@ -1,0 +1,11 @@
+.pui-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  &.show {
+    display: block;
+  }
+}

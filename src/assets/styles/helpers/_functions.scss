@@ -1,0 +1,7 @@
+@function pui-color($values, $key: C1, $alfa: "V") {
+  @if ($alfa != "V" && map-has-key($g-alfa, $alfa)) {
+    $o: map-get($g-alfa, $alfa);
+    @return rgba(map-get($values, $key), $o);
+  }
+  @return rgba(map-get($values, $key), 1);
+}
